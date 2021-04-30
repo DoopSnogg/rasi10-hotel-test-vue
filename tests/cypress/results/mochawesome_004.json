@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T08:20:53.381Z",
+    "end": "2021-04-30T08:21:14.429Z",
+    "duration": 21048,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b87752f-b120-4901-863e-dda36d9a17a1",
+      "title": "",
+      "fullFile": "cypress/integration/page-objects.spec.js",
+      "file": "cypress/integration/page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+          "title": "Testsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login and logout",
+              "fullTitle": "Testsuite Login and logout",
+              "timedOut": null,
+              "duration": 2895,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "0c05298e-4ee9-4c49-809a-113c466c8e79",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Client",
+              "fullTitle": "Testsuite Client",
+              "timedOut": null,
+              "duration": 4116,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.viewClients(\"Clients\");\nclient.viewClientNew(\"New Client\");\nnewClient.createClient(\"tester\", \"tester@mail.com\", \"0123456789\", \"Clients\");\nclient.verifyLastClient(\"tester\", \"tester@mail.com\", \"0123456789\");\nclient.deleteLastClient();\nindex.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "949a1e40-8d36-4781-b672-2e69f18ba5cc",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bill",
+              "fullTitle": "Testsuite Bill",
+              "timedOut": null,
+              "duration": 3309,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.viewBills(\"Bills\");\nbill.viewBillNew(\"New Bill\");\nnewBill.createBill(\"123456789\", \"Bills\");\nbill.verifyLastBill(\"123456789\");\nbill.deleteLastBill();\nindex.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "c0073f29-80ed-4149-b6e6-7afa6e82d551",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Room",
+              "fullTitle": "Testsuite Room",
+              "timedOut": null,
+              "duration": 4078,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.viewRooms(\"Rooms\");\nroom.viewRoomNew(\"New Room\");\nnewRoom.createRoom(\"double\", \"123456\", \"123\", \"123456789\", \"ensuite\", \"Rooms\");\nroom.verifyLastRoom(\"double\", \"123456\", \"123\", \"123456789\", \"ensuite\");\nroom.deleteLastRoom();\nindex.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "bea0db2f-1c6d-4d78-b770-c8522b3e905b",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Reservation",
+              "fullTitle": "Testsuite Reservation",
+              "timedOut": null,
+              "duration": 4037,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.viewReservations(\"Reservations\");\nreservation.viewReservationNew(\"New Reservation\");\nnewReservation.createReservation(\"1999-06-19\", \"2026-06-19\", \"Jonas Hellman (#1)\", \"Floor 1, Room 101\", \"ID: 1\", \"Reservations\");\nreservation.verifyLastReservation(\"1999-06-19\", \"2026-06-19\", \"Jonas Hellman\", \"Room: 1\", \"ID: 1\");\nreservation.deleteLastReservation();\nindex.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "657dd52a-16a0-4280-8b56-f8029583aa93",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Home",
+              "fullTitle": "Testsuite Home",
+              "timedOut": null,
+              "duration": 2567,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "index.viewBills(\"Bills\");\nbill.returnToHomePage(\"Tester Hotel Overview\");\nindex.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "33b921b4-c17f-4de0-9cea-571a0afd122a",
+              "parentUUID": "ef175443-6f7f-469f-9e48-6bf911d9ab1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c05298e-4ee9-4c49-809a-113c466c8e79",
+            "949a1e40-8d36-4781-b672-2e69f18ba5cc",
+            "c0073f29-80ed-4149-b6e6-7afa6e82d551",
+            "bea0db2f-1c6d-4d78-b770-c8522b3e905b",
+            "657dd52a-16a0-4280-8b56-f8029583aa93",
+            "33b921b4-c17f-4de0-9cea-571a0afd122a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21002,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
